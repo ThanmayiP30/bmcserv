@@ -1,0 +1,6 @@
+[
+    {
+        "name": "task",
+        "imageUri": "818779533109.dkr.ecr.ap-south-1.amazonaws.com/task:latest"
+    }
+]
