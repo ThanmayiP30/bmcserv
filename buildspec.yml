@@ -9,12 +9,12 @@ phases:
   build:
     commands:
       # Build Docker image
-      - docker build -t project .
+      - docker build -t task .
       # Tag Docker image with ECR repository URI
-      - docker tag project:latest 818779533109.dkr.ecr.ap-south-1.amazonaws.com/project:latest
+      - docker tag task:latest 818779533109.dkr.ecr.ap-south-1.amazonaws.com/task:latest
 
   post_build:
     commands:
       # Push Docker image to Amazon ECR
-      - docker push 818779533109.dkr.ecr.ap-south-1.amazonaws.com/project:latest
+      - docker push 818779533109.dkr.ecr.ap-south-1.amazonaws.com/task:latest
 
