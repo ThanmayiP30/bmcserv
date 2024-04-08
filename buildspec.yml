@@ -18,3 +18,8 @@ phases:
       # Push Docker image to Amazon ECR
       - docker push 818779533109.dkr.ecr.ap-south-1.amazonaws.com/task:latest
 
+artifacts:
+  files:
+    - imagedefinitions.json
+
+
