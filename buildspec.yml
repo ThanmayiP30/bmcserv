@@ -10,9 +10,10 @@ phases:
       - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 818779533109.dkr.ecr.ap-south-1.amazonaws.com
   build:
     commands:
-      - echo Build started on `date`
-      - echo Building the Docker image...
-      - docker build -t 818779533109.dkr.ecr.ap-south-1.amazonaws.com/project .
+      - echo "Build started on `date`"
+      - echo "Building Docker image..."
+      - docker build -t digital:latest .
+      - echo "Build completed on `date`"
   post_build:
     commands:
       - echo Build completed on `date`
