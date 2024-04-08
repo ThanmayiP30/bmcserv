@@ -25,6 +25,7 @@
                 <option value="Bengaluru">Bengaluru</option>
                 <option value="Mysore">Mysore</option>
                 <option value="Mangaluru">Mangaluru</option>
+                <option value="Belagavi">Belagavi</option>
             </select>
             <button class="signin"
                 onclick="document.getElementById('id01').style.display='block'">Signin</button>
