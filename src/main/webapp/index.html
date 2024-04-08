@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            display: flex;
+        }
+        #lo{
+            color: whitesmoke;
+            font-family: 'Times New Roman', serif;
+            margin-left: 10px;
+            font-size: 44.8px;
+        }
+        .sub{
+            color: whitesmoke;
+            font-family: 'Times New Roman', serif;
+            font-size: 28.8px;
+            margin-left: 100px;
+            margin-top: -20px;
+        }
+
+        .logo{
+            display: flex;
+            margin-top: 50px;
+        }
+        #si{
+            height: 48px; 
+            width: 280px;
+            color: aliceblue;
+            background-color: #1A98FF;
+            margin-left: 100px;
+
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <div class="logo">
+    <p id="lo">Welcome To BookMyCinema</p>
+    <img style="margin-top: 20px;" src="./images/logo-removebg-preview.png" alt="" height="100px" width="100px">
+</div>
+<p class="sub">Watch the latest movies,events and plays </p>
+<p class="sub">Watch anywhere. Cancel anytime</p>
+<form action="" method="post" onsubmit="return false;">
+    <button id="si" onclick="togglePopup()">Signin to join us</button>
+</form>
+
+</div>
+<img src="./images/backgrond.png" width="600px"; style="border-right: outset ;">
+<div class="popup" id="signupPopup">
+    <form action="login" method="post">
+	<br> 
+	<p style="border: outset; font-Style: apple-system Segoe-UI;font-Size:25px;text-align: center;"> LOGIN PAGE</p>
+	<br><br>
+	<input placeholder="Email/Mobile" type="text" name="emph" class="te">
+	<br><br>
+	<input placeholder="Password" type="text" name="password" class="te">
+	<br><br>
+	<button style="border: outset darkcyan;background-color: darkcyan;color: snow; margin-left: 60px; " type="submit">Signup</button>
+	<button style="border: outset  red; margin-left: 160px; background-color:red; color: snow;" type="button">Cancel</button>
+	<br> <br>
+	<a style="margin-left: 120px;" href="signup.html">Already registered login</a>
+
+</form>
+
+</div>
+<script>
+    function togglePopup() {
+        var popup = document.getElementById("signupPopup");
+        popup.style.display = (popup.style.display === "none" || popup.style.display === "") ? "block" : "none";
+    }
+</script>
+</body>
+</html>
